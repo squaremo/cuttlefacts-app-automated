@@ -23,12 +23,8 @@ spec:
 
       containers:
       - name: server
-        image: docker.pkg.github.com/squaremo/cuttlefacts/app
+        image: cuttlefacts/cuttlefacts-app
         imagePullPolicy: IfNotPresent
-        resources:
-          requests:
-            cpu: 50m
-            memory: 64Mi
         ports:
         - containerPort: 8080
         livenessProbe:
