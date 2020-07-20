@@ -23,7 +23,7 @@ spec:
 
       containers:
       - name: server
-        image: cuttlefacts/cuttlefacts-app
+        image: squaremo/cuttlefacts-app
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
