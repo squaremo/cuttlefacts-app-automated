@@ -20,10 +20,9 @@ spec:
     spec:
       nodeSelector:
         beta.kubernetes.io/os: linux
-
       containers:
       - name: server
-        image: squaremo/cuttlefacts-app
+        image: squaremo/cuttlefacts-app:1.0.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
