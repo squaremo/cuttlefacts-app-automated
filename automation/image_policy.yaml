@@ -1,0 +1,17 @@
+apiVersion: image.fluxcd.io/v1alpha1
+kind: ImageRepository
+metadata:
+  name: app-image
+spec:
+  image: squaremo/cuttlefacts-app
+---
+apiVersion: image.fluxcd.io/v1alpha1
+kind: ImagePolicy
+metadata:
+  name: app-policy
+spec:
+  imageRepository:
+    name: app-image
+  policy:
+    semver:
+      range: 1.x

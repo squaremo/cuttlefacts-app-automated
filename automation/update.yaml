@@ -1,0 +1,15 @@
+apiVersion: image.fluxcd.io/v1alpha1
+kind: ImageUpdateAutomation
+metadata:
+  name: update-app
+spec:
+  gitRepository:
+    name: cuttlefacts-auto
+  update:
+    imagePolicy:
+      name: app-policy
+  commit:
+    authorName: Michaelbot
+    authorEmail: mikeb@squaremobius.net
+    messageTemplate: |
+      Here look what I did
