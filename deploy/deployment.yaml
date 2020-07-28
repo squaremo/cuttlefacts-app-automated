@@ -22,7 +22,7 @@ spec:
         beta.kubernetes.io/os: linux
       containers:
       - name: server
-        image: cuttlefacts/cuttlefacts-app:1.0.0
+        image: cuttlefacts/cuttlefacts-app
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
